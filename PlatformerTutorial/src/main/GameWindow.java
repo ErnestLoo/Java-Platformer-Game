@@ -3,15 +3,16 @@ package main;
 import javax.swing.JFrame;
 
 public class GameWindow{
-    private JFrame jFrame;
+    private JFrame jframe;
     public GameWindow(GamePanel gamePanel){
 
-        jFrame = new JFrame();
-
-        jFrame.setSize(400,400);
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.add(gamePanel);
-        jFrame.setLocationRelativeTo(null);
-        jFrame.setVisible(true);
+        jframe = new JFrame();
+        
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.add(gamePanel);
+        jframe.setResizable(false);
+        jframe.pack();
+        jframe.setLocationRelativeTo(null);
+        jframe.setVisible(true);
     }
 }
