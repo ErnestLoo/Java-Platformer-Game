@@ -2,7 +2,6 @@ package main;
 
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
-import utils.Constants.PlayerConstants;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -12,7 +11,7 @@ import java.io.InputStream;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-import static utils.Constants.PlayerConstants.*;
+import static utilz.Constants.PlayerConstants.*;
 
 public class GamePanel extends JPanel {
 
@@ -42,7 +41,7 @@ public class GamePanel extends JPanel {
 
 		for (int j = 0; j < animations.length; j++) {
 			for (int i = 0; i < animations[j].length; i++) {
-				animations[j][i] = img.getSubimage(i * 64, j*40, 64, 40);
+				animations[j][i] = img.getSubimage(i * 64, j * 40, 64, 40);
 			}
 		}
 	}
